@@ -17,7 +17,7 @@ except:
     pass
 
 translated = translator.translate(text, dest=output_lang)
-print(translated.text)
+print(translated)
 converted_audio = gtts.gTTS(translated.text, lang=output_lang)
 converted_audio.save('romantic.mp3')
 playsound.playsound('romantic.mp3')
